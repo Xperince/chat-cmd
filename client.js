@@ -1,6 +1,6 @@
 import WebSocket from 'ws'
 import readline from 'readline'
-import chalk from 'chalk' // Убедитесь, что chalk установлен (npm install chalk)
+import chalk from 'chalk'
 
 const ws = new WebSocket('ws://217.144.188.167:8080')
 const rl = readline.createInterface({
@@ -8,9 +8,8 @@ const rl = readline.createInterface({
 	output: process.stdout,
 })
 
-// В chalk v5+ нужно использовать так:
-console.log(chalk.yellow('Сообщение')) // вместо chalk.yellow('Сообщение')
-// Цвета для сообщений
+console.log(chalk.yellow('Сообщение'))
+
 const colors = {
 	server: chalk.red,
 	client: chalk.green,
